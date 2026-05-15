@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finn Store - Jual Item Roblox Fish It Terpercaya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .logo span {
+            background: linear-gradient(45deg, #00d4ff, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00d4ff;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #00d4ff, #0099cc);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,212,255,0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,212,255,0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Features */
+        .features {
+            padding: 100px 0;
+            background: #f8fbff;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 4rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 4px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .price-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .price-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .price-card.featured {
+            background: linear-gradient(135deg, #00d4ff, #0099cc);
+            transform: scale(1.05);
+        }
+
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        /* WhatsApp Channel */
+        .whatsapp-channel {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37,211,102,0.4);
+        }
+
+        .whatsapp-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37,211,102,0.5);
+        }
+
+        /* TESTIMONIAL - GAMBAR ITEM ROBLOX (KOTAK 1:1) */
+        .testimonials {
+            padding: 100px 0;
+            background: #f8fbff;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        /* GAMBAR ITEM ROBLOX - KOTAK 1:1 */
+        .item-image {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 1.5rem;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border: 3px solid #00d4ff;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover .item-image {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,212,255,0.4);
+        }
+
+        .item-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+
+        .stars {
+            color: #ff9500;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .buyer-info {
+            font-weight: 600;
+            color: #1e3c72;
+            font-size: 0.95rem;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e8ff;
+            border-radius: 10px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+            background: rgba(255,255,255,0.9);
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 3rem 0 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #00d4ff;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero {
+                height: 100vh;
+                padding: 140px 1rem 60px;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .features-grid, .pricing-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+
+            .item-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .whatsapp-link {
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 1.5rem;
+                font-size: 1rem;
+            }
+
+            .price-amount {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .item-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .cta-button {
+                padding: 14px 20px;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Finn<span>Store</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Keunggulan</a></li>
+                <li><a href="#pricing">Harga</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <a href="#contact" class="cta-button"><i class="fab fa-whatsapp"></i> Chat WA</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><i class="fas fa-fish"></i> Finn Store</h1>
+            <p>Jasa Jual Item Roblox Fish It Terpercaya<br>Instant Delivery • Harga Terjangkau • 100% Aman</p>
+            <div class="hero-buttons">
+                <a href="#pricing" class="cta-button float"><i class="fas fa-shopping-cart"></i> Lihat Harga</a>
+                <a href="#testimonials" class="cta-button" style="background: rgba(255,255,255,0.2); border: 2px solid white;">Lihat Testimoni</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Mengapa Pilih Finn Store?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Delivery</h3>
+                    <p>Dapatkan item dalam hitungan menit setelah pembayaran dikonfirmasi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>100% Aman</h3>
+                    <p>Transaksi aman dengan sistem refund jika ada masalah</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support 24/7</h3>
+                    <p>Customer service siap membantu kapan saja anda membutuhkan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Daftar Harga Item Fish It</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Common Fish</h3>
+                    <div class="price-amount">Rp 5.000</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> 1-10 pcs</li>
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> Instant delivery</li>
+                    </ul>
+                    <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Pesan</a>
+                </div>
+                <div class="price-card featured">
+                    <h3>Legendary Fish <span style="font-size: 0.8em; background: rgba(0,0,0,0.2); padding: 0.2em 0.5em; border-radius: 20px;">POPULAR</span></h3>
+                    <div class="price-amount">Rp 25.000</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> 1 pcs Legendary</li>
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> VIP Support</li>
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> Garansi 100%</li>
+                    </ul>
+                    <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Pesan Sekarang</a>
+                </div>
+                <div class="price-card">
+                    <h3>Custom Order</h3>
+                    <div class="price-amount">Rp 50.000+</div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> Item sesuai request</li>
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> Quantity bebas</li>
+                    </ul>
+                    <a href="#contact" class="cta-button" style="margin-top: 1.5rem;">Custom Order</a>
+                </div>
+            </div>
+
+            <!-- WhatsApp Channel -->
+            <div class="whatsapp-channel">
+                <a href="https://wa.me/6281234567890" class="whatsapp-link" target="_blank">
+                    <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
+                    Chat WhatsApp Admin untuk Order Cepat!
+                </a>
+                <p style="margin-top: 1rem; opacity: 0.8;">Klik untuk order sekarang - Response <strong>1 menit</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI - GAMBAR ITEM ROBLOX -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">📦 Item yang Sudah Terjual</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://tr.rbxcdn.com/057000/57000462a7f7a7f7a7f7a7f7a7f7a7f7/350/350/Image/Png" 
+                         alt="Legendary Golden Fish" class="item-image">
+                    <div class="item-name">Legendary Golden Fish</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Terima kasih Finn Store! Fish ini langsung masuk inventory, mantap!"</p>
+                    <div class="buyer-info">Beli 2 jam yang lalu • @FishHunter</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://tr.rbxcdn.com/057000/57000555a7f7a7f7a7f7a7f7a7f7a7f7/350/350/Image/Png" 
+                         alt="Rare Diamond Fish" class="item-image">
+                    <div class="item-name">Rare Diamond Fish</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Keren banget! Harga murah delivery cepat, recommended seller!"</p>
+                    <div class="buyer-info">Beli 4 jam yang lalu • @RobloxPro</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://tr.rbxcdn.com/057000/57000666a7f7a7f7a7f7a7f7a7f7a7f7/350/350/Image/Png" 
+                         alt="Epic Rainbow Fish" class="item-image">
+                    <div class="item-name">Epic Rainbow Fish</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Custom order sesuai request, admin fast response 24/7!"</p>
+                    <div class="buyer-info">Beli kemarin • @FishMasterID</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Siap Membeli Item Fish It?</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3><i class="fas fa-whatsapp"></i> Kontak WhatsApp</h3>
+                    <p><strong>📱 WA Admin:</strong> <a href="https://wa.me/6281234567890" style="color: #00d4ff;">0812-3456-7890</a></p>
+                    <p><strong>⏰ Jam Operasional:</strong> 24/7</p>
+                    <p><strong>💳 Metode Pembayaran:</strong></p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> OVO</li>
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> DANA</li>
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> GoPay</li>
+                        <li><i class="fas fa-check" style="color: #00cc88;"></i> Transfer Bank</li>
+                    </ul>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Username Roblox" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Item yang diinginkan" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Nomor WhatsApp" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Pesan tambahan..."></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Kirim Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>Finn Store</h3>
+            <p>&copy; 2024 Finn Store. Jual Item Roblox Fish It Terpercaya.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Order berhasil dikirim! Admin akan hubungi via WhatsApp dalam 5 menit.');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(30, 60, 114, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)';
+            }
+        });
+    </script>
+</body>
+</html>
